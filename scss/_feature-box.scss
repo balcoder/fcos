@@ -1,0 +1,57 @@
+// .feature-box {
+//   background-color: rgba(white, .8);
+//   font-size: 1rem;
+//   padding: 2.5rem;
+//   text-align: center;
+//   border-radius: 3px;
+//   box-shadow: 0 1.5rem 4rem rgba(black, .5);
+//   transition: transform .2s;
+//
+//   // @include respond(tab-port) {
+//   //   padding: 2rem;
+//   // }
+//
+//
+//
+//   &__icon {
+//   //font-size: 6rem;
+//   margin-bottom: .5rem;
+//   display: inline-block;
+//   background-image: linear-gradient(to right, $orange-light, $orange);
+//   -webkit-background-clip: text;
+//   color: transparent;
+//
+//   // @include respond(tab-port) {
+//   //   margin-bottom: 0;
+//   // }
+//
+//
+//   }
+//
+//
+// }
+.card-vacancy {
+  background-color: rgba(white, .8);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .5);
+  transition: transform .2s;
+
+  &__icon {
+  //font-size: 6rem;
+  margin-bottom: .5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, $orange-light, $orange);
+  -webkit-background-clip: text;
+  color: transparent;
+
+  // @include respond(tab-port) {
+  //   margin-bottom: 0;
+  // }
+
+
+  }
+
+  &:hover {
+    transform:scale(1.05) translateY(-1.5rem);
+  }
+
+}
