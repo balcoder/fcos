@@ -10684,6 +10684,19 @@ header.masthead h1 {
   font-size: 2.25rem;
 }
 
+header.masthead h2 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  header.masthead h1 {
+    font-size: 2.5rem;
+  }
+  header.masthead h2 {
+    font-size: 1.75rem;
+  }
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -10697,63 +10710,46 @@ header.masthead h1 {
   header.masthead h1 {
     font-size: 3rem;
   }
+  header.masthead h2 {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
     font-size: 3.5rem;
   }
+  header.masthead h2 {
+    font-size: 2.5rem;
+  }
 }
 
-#portfolio .container-fluid {
-  max-width: 1920px;
+.about h2 {
+  font-size: 1.5rem;
 }
 
-#portfolio .container-fluid .portfolio-box {
-  position: relative;
-  display: block;
+@media (min-width: 576px) {
+  .about h2 {
+    font-size: 1.75rem;
+  }
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  opacity: 0;
-  color: #fff;
-  background: rgba(244, 98, 58, 0.9);
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-  text-align: center;
+@media (max-width: 767.98px) {
+  #about {
+    padding: 4rem 0;
+  }
 }
 
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
-}
-
-#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+@media (max-width: 767.98px) {
+  #services {
+    padding: 4rem 0;
+  }
+  #services h2 {
+    font-size: 1.8rem;
+  }
+  #icon-heading {
+    font-size: 1.25rem;
+  }
 }
 
 .careers {
@@ -10766,6 +10762,12 @@ header.masthead h1 {
   color: white;
   height: 15rem;
   overflow: hidden;
+}
+
+@media (max-width: 767.98px) {
+  .careers__header {
+    height: 10rem;
+  }
 }
 
 .careers__header--heading {
@@ -10796,16 +10798,46 @@ header.masthead h1 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+@media (max-width: 767.98px) {
+  .careers__header--heading .eyebrow {
+    font-size: 1.75rem;
+  }
+}
+
 .careers__header--heading .title {
   font-size: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .careers__header--heading .title {
+    font-size: 2.1rem;
+  }
 }
 
 .careers__intro blockquote {
   padding: 4rem 5rem 2rem 5rem;
 }
 
+@media (max-width: 767.98px) {
+  .careers__intro blockquote {
+    font-size: 1rem;
+    padding: 2rem 1rem;
+  }
+}
+
 .btn-apply {
   display: inline-block;
+}
+
+.feature-box__heading {
+  padding-top: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .feature-box__heading {
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+  }
 }
 
 .card-vacancy {
@@ -10830,6 +10862,15 @@ header.masthead h1 {
 .card-vacancy:hover {
   -webkit-transform: scale(1.05) translateY(-1.5rem);
   transform: scale(1.05) translateY(-1.5rem);
+}
+
+@media (max-width: 767.98px) {
+  .testimonial h2 {
+    font-size: 1.8rem;
+  }
+  .testimonial .carousel-inner blockquote {
+    font-size: 1rem;
+  }
 }
 
 .carousel-inner {
@@ -10862,10 +10903,80 @@ header.masthead h1 {
   background-color: black;
 }
 
+#graduate .grad-heading-container {
+  padding: 2rem 0;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+#graduate .grad-heading-container h2 {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  #graduate .grad-heading-container h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #graduate .grad-heading {
+    font-size: 1.5rem;
+  }
+  #graduate .grad-lists h3 {
+    font-size: 1.25rem;
+  }
+}
+
 .undergrad__heading {
   padding: 5rem 0;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+@media (max-width: 767.98px) {
+  .undergrad__heading {
+    padding: 3rem 0;
+  }
+  .undergrad__heading h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.undergrad .undergrad-btn {
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .undergrad .undergrad-btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .undergrad .college-intern h3, .undergrad .summer-intern h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.contact {
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+.contact address {
+  text-align: left;
+}
+
+@media (max-width: 767.98px) {
+  .contact h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contact address {
+    text-align: center;
+  }
 }
 
 .contact .map-responsive {
@@ -10891,7 +11002,10 @@ header.masthead h1 {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
-/* footer social icons */
+.contact address {
+  line-height: 1.8rem;
+}
+
 .footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
