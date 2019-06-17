@@ -11006,6 +11006,52 @@ header.masthead h2 {
   line-height: 1.8rem;
 }
 
+.privacy {
+  margin-top: 5rem;
+  padding: 2rem 4rem;
+}
+
+.privacy h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .privacy {
+    padding: 1rem .5rem;
+  }
+}
+
+#privacyNav {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #292b2c;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+#privacyNav .navbar-brand {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #f4623a;
+}
+
+#privacyNav .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+}
+
+#privacyNav .navbar-nav .nav-item .nav-link:hover, #privacyNav .navbar-nav .nav-item .nav-link:active {
+  color: #f4623a;
+}
+
+#privacyNav .navbar-nav .nav-item .nav-link.active {
+  color: #f4623a !important;
+}
+
 .footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11026,6 +11072,17 @@ header.masthead h2 {
   color: #d6370c;
 }
 
+.footer__links--privacy {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.footer__links--privacy > li a {
+  margin: 0 .7rem;
+  font-size: .8rem;
+}
+
 @media only screen and (max-width: 400px) {
   .footer__links {
     -ms-flex-wrap: wrap;
@@ -11042,6 +11099,22 @@ header.masthead h2 {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .footer__links--privacy {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .footer__links--privacy > li {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
 .social_footer_ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11055,7 +11128,7 @@ header.masthead h2 {
 
 .social_footer_ul li a {
   color: #CCC;
-  border: 1px solid #CCC;
+  border: 2px solid #CCC;
   padding: 8px;
   border-radius: 50%;
 }
